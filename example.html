@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example</title>
+    <style>
+      body {
+        background-color: #212529;
+        color: white;
+      }
+      .wrapper {
+        /* width: 100vw; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+      }
+      .top {
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #495057;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(43 48 53);
+        border-radius: 0.5rem;
+        padding: 48px;
+        margin-bottom: 24px;
+      }
+      .mainButton {
+        padding: 12px 16px;
+        font-size: 20px;
+        background-color: #0d6efd;
+        border: #0d6efd;
+        cursor: pointer;
+        width: fit-content;
+        border-radius: 0.5rem;
+        color: white;
+      }
+      .mainButton:hover {
+        background-color: #0b5ed7;
+      }
+      .smallContainer {
+        display: flex;
+        color: white;
+      }
+      .smallboxCommon {
+        padding: 48px;
+      }
+      .smallboxCommon h2 {
+        font-size: 32px;
+        margin: 0 0 8px;
+      }
+      .smallboxCommon p {
+        margin: 0 0 16px;
+      }
+      .rightSmallbox {
+        background-color: #2b3035;
+        border-radius: 0.5rem;
+        border: 1px solid#495057;
+        margin-left: 12px;
+      }
+      .smallboxButton {
+        cursor: pointer;
+        padding: 9px 15px;
+        font-size: 16px;
+        width: fit-content;
+        border-radius: 0.375rem;
+      }
+      .rightButton {
+        border: 1px solid white;
+      }
+      .rightButton:hover {
+        background-color: white;
+        color: black;
+      }
+      .leftButton {
+        border: 1px solid #6c757d;
+        color: #6c757d;
+      }
+      .leftButton:hover {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+      .bottom {
+        margin: 27px 0 0;
+        padding: 19px 0 0;
+        border-top: 1px solid #495057;
+        color: rgba(222, 226, 230, 0.75);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="32"
+            class="me-2"
+            viewBox="0 0 118 94"
+            role="img"
+            style="margin-right: 0.5rem"
+          >
+            <title>Bootstrap</title>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+              fill="currentColor"
+            ></path>
+            <div>Jombotron example</div>
+          </svg>
+        </div>
+        <div class="main">
+          <div style="font-size: 48px; font-weight: 700; margin-bottom: 8px">Custom Jombotron</div>
+          <div style="font-size: 24px; width: 66%; margin-bottom: 16px">
+            Using a series of utilities, you can create this jumbotron, just like the one in previous versions of
+            Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.
+          </div>
+          <button class="mainButton">Example Button</button>
+        </div>
+        <div class="smallContainer">
+          <div class="smallboxCommon" style="margin-right: 12px">
+            <h2>Change the background</h2>
+            <p>
+              Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then,
+              mix and match with additional component themes and more.
+            </p>
+            <div class="smallboxButton rightButton">Example Button</div>
+          </div>
+
+          <div class="smallboxCommon rightSmallbox">
+            <h2>Add borders</h2>
+            <p>
+              Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to
+              look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+              content for equal-height.
+            </p>
+            <div class="smallboxButton leftButton">Example Button</div>
+          </div>
+        </div>
+        <div class="bottom">© 2024</div>
+      </div>
+    </main>
+  </body>
+</html>
